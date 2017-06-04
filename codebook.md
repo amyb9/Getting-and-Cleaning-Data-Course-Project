@@ -1,20 +1,20 @@
-#Tidy Data Set from Human Activity Recognition Using Smartphones Dataset
+# Tidy Data Set from Human Activity Recognition Using Smartphones Dataset
 
 
 The purpose of this project was to create a tidy data set that could be used for later analysis from raw data obtained from wearing computing devices. 
 
-##Study Design and Data Processing
+## Study Design and Data Processing
 
 Raw data came from a study originally done by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto at the Smartlab - Non Linear Complex Systems Laboratory.
 
-###Collection of the Raw Data 
+### Collection of the Raw Data 
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
-###Notes on the Raw Data 
+### Notes on the Raw Data 
 
 For each record it is provided:
 
@@ -24,9 +24,9 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-##Creating the Tidy Datafile
+## Creating the Tidy Datafile
 
-###Guide to Creating the Tidy Data File 
+### Guide to Creating the Tidy Data File 
 
 Steps to create the tidy data file: 
 1. Download zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
@@ -38,11 +38,11 @@ The tidy data set can be tested by running the following:
 tidy_test<-read.table("tidy_data.txt", header=TRUE)
 ```
 
-###Cleaning of the Data
+### Cleaning of the Data
 
 The cleaning script for this data reads in and cleans up activity names and column names, adds column names and activities to test and train data, combines test data columns and train data columns, and then combines test data rows with train data rows. Full details of this process can be found in the README.md document. 
 
-##Description of Variables
+## Description of Variables
 
 The tidy_data.txt data set is a data frame with 180 observations of 6 variables. 
 
