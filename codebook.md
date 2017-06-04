@@ -24,7 +24,7 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-## Creating the Tidy Datafile
+## Creating the Tidy Data File
 
 ### Guide to Creating the Tidy Data File 
 
